@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 .reserva-boton {
     position: relative; /* Asegura que el botón esté dentro de su contenedor */
     z-index: 1; /* Envía el botón al fondo */
@@ -42,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0d9488; /* teal-600 */
+    color: #2dd4bf; /* teal-400 */
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -60,7 +59,7 @@ li a.active, li a:hover {
 /* Botón de menú para dispositivos pequeños */
 .checkbtn {
     font-size: 30px;
-    color: #0d9488; /* teal-600 */
+    color: #2dd4bf; /* teal-400 */
     float: right;
     line-height: 80px;
     margin-right: 40px;
