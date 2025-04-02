@@ -32,27 +32,67 @@
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <!-- Tarjeta Teléfono -->
-            <div class="bg-blue-900 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
-                <img src="images/icons/whatsapp-cyan.png" alt="WhatsApp" class="w-12 h-12">
-                <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
-                <a href="https://wa.me/+34671011632?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="text-lg text-white hover:text-teal-400 transition duration-300">
-                    Enviar mensaje
-                </a>
-            </div>
-            <div class="bg-blue-900 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
-                <img src="images/icons/tlf-cyan.png" alt="Teléfono" class="w-12 h-12">
-                <h3 class="text-xl font-semibold text-white">Llámanos</h3>
-                <a href="tel:+34671011632" class="text-lg text-white hover:text-teal-400 transition duration-300">
-                    +34 671 011 632
-                </a>
-            </div>
-        
+            <a href="https://wa.me/+34671011632?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="block">
+                <div class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
+                    <img src="images/icons/whatsapp-blue-900.png" alt="WhatsApp" class="w-16 h-16">
+                    <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
+                    <p class="text-lg text-blue-900 hover:text-teal-400 transition duration-300">
+                        Enviar mensaje
+                    </p>
+                </div>
+            </a>
+            <a href="tel:+34671011632" class="block">
+                <div class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
+                    <img src="images/icons/tlf-blue-900-def.png" alt="Teléfono" class="w-16 h-16">
+                    <h3 class="text-xl font-semibold text-white">Llámanos</h3>
+                    <p class="text-lg text-blue-900 hover:text-teal-400 transition duration-300">
+                        +34 671 011 632
+                    </p>
+                </div>
+            </a>
             <!-- Tarjeta Correo -->
-            <div class="bg-blue-900 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up ">
-                <img src="images/icons/mail-cyan.png" alt="Correo" class="w-14 h-14">
-                <h3 class="text-xl font-semibold text-white">Correo Electrónico</h3>
-                <a href="mailto:fisiocivis@gmail.com" class="text-lg text-white hover:text-teal-400 transition duration-300">
-                    fisiocivis@gmail.com
+            <a href="mailto:fisiocivis@gmail.com" class="block">
+                <div class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
+                    <img src="images/icons/correo-blue-900.png" alt="Correo" class="w-16 h-16">
+                    <h3 class="text-xl font-semibold text-white">Correo Electrónico</h3>
+                    <p class="text-lg text-blue-900 hover:text-teal-400 transition duration-300">
+                        fisiocivis@gmail.com
+                    </p>
+                </div>
+            </a>
+        </section>
+
+        <section id="servicios" class="mt-12 text-center items-center">
+            <h2 class="text-5xl font-semibold text-blue-900">¿Aún no conoces nuestros servicios?</h2>
+            <p class="mt-2 text-gray-600">
+                Ofrecemos tratamientos personalizados en <strong>fisioterapia a domicilio en Sevilla</strong> para aliviar el dolor y mejorar tu movilidad.
+                <a href="servicios.html" class="text-blue-900 font-semibold hover:underline">Ver servicios</a>.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6">
+                <a href="service-neu.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition duration-300 block text-center">
+                    <img src="images/icons/fisioterapia-cerebro.png" alt="Fisioterapia Neurológica en Sevilla" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Neurológica</h3>
+                </a>
+                
+                <a href="service-resp.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition duration-300 block text-center">
+                    <img src="images/icons/fisioterapia-respiratoria.png" alt="Fisioterapia Respiratoria en Sevilla" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Respiratoria</h3>
+                </a>
+        
+                <a href="service-ger.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition duration-300 block text-center">
+                    <img src="images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica en Sevilla" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
+                </a>
+        
+                <a href="service-trau.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition duration-300 block text-center">
+                    <img src="images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica en Sevilla" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
+                </a>
+        
+                <a href="service-vas.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition duration-300 block text-center">
+                    <img src="images/icons/fisioterapia-sevilla-cardio.png" alt="Fisioterapia Vascular en Sevilla" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Vascular</h3>
                 </a>
             </div>
         </section>
