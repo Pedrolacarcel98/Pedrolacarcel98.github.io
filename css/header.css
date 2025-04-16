@@ -46,7 +46,7 @@ nav ul li a {
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-transform: none;
     transition: color 0.3s ease; /* Transición suave para el color */
 }
 
