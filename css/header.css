@@ -14,18 +14,19 @@
 /* Estilo del nav */
 nav {
     background: #ffffff; /* Fondo blanco */
-    height: 80px;
+    height: 90px;
     width: 100%;
 }
 
 /* Estilo del enlace del logo */
 .enlace {
     position: absolute;
-    padding: 20px 50px;
+    padding: 15px 50px;
 }
 
 .logo {
     height: 60px;
+    margin-bottom: 5px;
 }
 
 /* Estilo del menú */
