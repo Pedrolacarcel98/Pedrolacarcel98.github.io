@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarifas - Grupo Flamenco Pop</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <div id="header-container"></div>
+
+  <!-- Hero / Tarifas -->
+  <section class="text-center py-24 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Nuestras Tarifas</h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+      Descubre nuestras opciones para que tu evento sea inolvidable. Calidad, profesionalidad y arte a tu alcance.
+    </p>
+  </section>
+
+  <!-- Sección de tarifas -->
+  <section class="bg-black py-8 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- BODAS -->
+      <div class="bg-white text-black rounded-xl shadow-lg p-8 text-center flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold mb-4">Bodas</h2>
+        <p class="mb-6">
+          Un repertorio especial para tu día más importante, con música en directo que emociona y acompaña cada momento.
+        </p>
+        <p class="text-xl font-bold mb-4">Desde 1.200 €</p>
+        <button class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+          Solicitar Presupuesto
+        </button>
+      </div>
+
+      <!-- FIESTAS PRIVADAS -->
+      <div class="bg-white text-black rounded-xl shadow-lg p-8 text-center flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold mb-4">Fiestas Privadas</h2>
+        <p class="mb-6">
+          Aporta un toque único y vibrante a tus celebraciones con nuestra música en vivo, ideal para fiestas, cumpleaños y eventos especiales.
+        </p>
+        <p class="text-xl font-bold mb-4">Desde 600 €</p>
+        <button class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+          Reserva Ahora
+        </button>
+      </div>
+
+      <!-- ALQUILER DE EQUIPO -->
+      <div class="bg-white text-black rounded-xl shadow-lg p-8 text-center flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold mb-4">Alquiler de Equipo</h2>
+        <p class="mb-6">
+          Equipos de sonido profesional y luces para que tu evento tenga la mejor calidad técnica.
+        </p>
+        <p class="text-xl font-bold mb-4">Desde 100 € / día</p>
+        <button class="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+          Consulta Disponibilidad
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/header.js"></script>
+</body>
+</html>

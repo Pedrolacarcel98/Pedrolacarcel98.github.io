@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Grupo Flamenco Pop</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <div id="header-container"></div>
+
+  <!-- Hero / Contacto -->
+  <section class="text-center py-24 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">¡Estamos aquí para escucharte!</h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+      ¿Quieres reservar, preguntar algo o simplemente saludar?  
+      Aquí tienes varias formas de ponerte en contacto con nosotros.
+    </p>
+  </section>
+
+  <!-- Tarjetas de contacto -->
+  <section class="bg-black py-5 px-4">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 text-center">
+      
+      <!-- Instagram -->
+      <div class="bg-white text-black rounded-xl shadow-lg p-8 flex flex-col items-center justify-center">
+        <img src="images/instagram.png" alt="Instagram" class="w-16 h-16 mb-4" />
+        <h3 class="text-2xl font-semibold mb-2">Instagram</h3>
+        <p class="mb-4">Síguenos y estate al tanto de nuestros eventos y vídeos exclusivos.</p>
+        <a
+          href="https://www.instagram.com/toneleros" 
+          target="_blank"
+          class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+          >Ir a Instagram</a
+        >
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="bg-white text-black rounded-xl shadow-lg p-8 flex flex-col items-center justify-center">
+        <img src="images/whatsapp.png" alt="WhatsApp" class="w-16 h-16 mb-4" />
+        <h3 class="text-2xl font-semibold mb-2">WhatsApp</h3>
+        <p class="mb-4">La forma mas comoda para todos de reservar o consultar.</p>
+        <a
+          href="https://wa.me/34671011632"
+          target="_blank"
+          class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+          >Enviar mensaje</a
+        >
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <script src="js/header.js"></script>
+</body>
+</html>
