@@ -1,72 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - Grupo Flamenco Pop</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fisioterapia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
 
-  <style>
-    body {
-      font-family: 'Playfair Display', serif;
-    }
-  </style>
+    <style>
+        .custom-font {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-white to-blue-900 text-gray-900 custom-font pt-28">
 
-  <div id="header-container"></div>
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <section>
+            <div data-include="header.html"></div>
 
-  <!-- Hero / Contacto -->
-  <section class="text-center py-24 px-4">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">¡Estamos aquí para escucharte!</h1>
-    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-      ¿Quieres reservar, preguntar algo o simplemente saludar?  
-      Aquí tienes varias formas de ponerte en contacto con nosotros.
-    </p>
-  </section>
+        </section>
 
-  <!-- Tarjetas de contacto -->
-  <section class="bg-black py-5 px-4">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 text-center">
-      
-      <!-- Instagram -->
-      <div class="bg-white text-black rounded-xl shadow-lg p-8 flex flex-col items-center justify-center">
-        <img src="images/instagram.png" alt="Instagram" class="w-16 h-16 mb-4" />
-        <h3 class="text-2xl font-semibold mb-2">Instagram</h3>
-        <p class="mb-4">Síguenos y estate al tanto de nuestros eventos y vídeos exclusivos.</p>
-        <a
-          href="https://www.instagram.com/toneleros" 
-          target="_blank"
-          class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
-          >Ir a Instagram</a
-        >
-      </div>
+        
+    </header>
 
-      <!-- WhatsApp -->
-      <div class="bg-white text-black rounded-xl shadow-lg p-8 flex flex-col items-center justify-center">
-        <img src="images/whatsapp.png" alt="WhatsApp" class="w-16 h-16 mb-4" />
-        <h3 class="text-2xl font-semibold mb-2">WhatsApp</h3>
-        <p class="mb-4">La forma mas comoda para todos de reservar o consultar.</p>
-        <a
-          href="https://wa.me/34671011632"
-          target="_blank"
-          class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
-          >Enviar mensaje</a
-        >
-      </div>
+    <main class="p-8">
+        <h2 class="text-5xl font-bold text-center text-teal-400 mb-4">
+            Contacta  <span class="text-blue-900">con nosotros</span>
+        </h2>
 
+        <h2 class="text-2xl font-bold text-center text-blue-900 mb-4">
+            ¿Necesitas <span class="text-teal-400">información?</span>
+        </h2>
 
+        <p class="text-center text-lg mb-8">
+            Si tienes alguna duda o necesitas más información sobre nuestros servicios:
+        </p>
 
-<<<<<<< Updated upstream
-    </div>
-  </section>
-
-  <script src="js/header.js"></script>
-=======
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <!-- Tarjeta Teléfono -->
             <a href="https://wa.me/+34623436145?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="block">
@@ -148,6 +119,5 @@
 
     <div data-include="footer.html"></div>
     <script src="js/include.js"></script>
->>>>>>> Stashed changes
 </body>
 </html>
