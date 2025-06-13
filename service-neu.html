@@ -1,78 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Fisioterapia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fisioterapia Neurológica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <style>
         .custom-font {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 
-</head>
-<body class="bg-white text-gray-900 custom-font pt-28">
 
+</head>
+
+<body class="bg-white text-gray-900 custom-font pt-28">
     <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
         <section>
             <div data-include="header.html"></div>
-
         </section>
-
-        
     </header>
-        
+
     <main class="p-4">
-        <h2 class="text-5xl mt-10 font-bold text-center text-teal-400 mb-4">
+        <h2 class="text-5xl mt-10 font-bold text-center text-teal-400 mb-4" data-aos="fade-up" data-aos-offset="50">
             Fisioterapia Neurológica
         </h2>
-        
-        <section class="max-w-4xl mx-auto mt-8 px-6">
-            <h2 class="text-3xl font-semibold text-blue-900">¿Qué es la Fisioterapia Neurológica?</h2>
-            <p class="mt-4 text-lg leading-relaxed text-gray-700">
-                La fisioterapia neurológica es una especialidad de la fisioterapia que se centra en la rehabilitación de pacientes que han sufrido alteraciones en el sistema nervioso, ya sea por un accidente cerebrovascular, lesiones medulares, enfermedades neurodegenerativas o traumatismos. Nuestro objetivo es ayudar a las personas a recuperar la movilidad, el equilibrio y la calidad de vida, empleando técnicas especializadas y adaptadas a cada situación.
-            </p>
-            
-            <img src="images/services/fisio-neuro-detail.png" alt="Fisioterapia Neurológica" class="mt-6 mb-4 rounded-lg w-full max-w-md mx-auto">
 
-            <h3 class="text-2xl font-semibold text-blue-900 mt-6">¿En qué consiste la Fisioterapia Neurológica?</h3>
-            <p class="mt-4 text-lg leading-relaxed text-gray-700">
-                La fisioterapia neurológica se basa en la estimulación de los mecanismos de neuroplasticidad del cerebro y la médula espinal. Esto significa que, a través de ejercicios específicos y terapias manuales, se busca "reentrenar" al sistema nervioso para que recupere funciones perdidas o dañadas.
-            </p>
+        <section class="max-w-6xl mx-auto mt-8 px-6 space-y-16">
 
-            <ul class="list-disc list-inside mt-4 text-gray-700">
-                <li><strong>Ejercicios de movilidad:</strong> Para mejorar la flexibilidad y fuerza de las articulaciones.</li>
-                <li><strong>Terapia de equilibrio:</strong> Ayuda a prevenir caídas y a restaurar la postura correcta.</li>
-                <li><strong>Estimulación sensorial:</strong> Para recuperar la percepción y coordinación del cuerpo.</li>
-            </ul>
+            <!-- Bloque 1 -->
+            <div class="flex flex-col md:flex-row items-start gap-6" data-aos="fade-up" data-aos-offset="50">
+                <div class="md:w-1/2 md:pr-8">
+                    <h2 class="text-3xl font-semibold text-blue-900 mt-4">¿Qué es la fisioterapia neurológica?</h2>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        Es una rama especializada en el tratamiento de pacientes con alteraciones del sistema nervioso,
+                        como ictus, Parkinson, esclerosis múltiple o lesiones medulares. Su objetivo es restaurar
+                        funciones motoras, mejorar el equilibrio, el control postural y aumentar la autonomía en las
+                        actividades diarias.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="images/services-fisioterapia/neuro-1.jpg" alt="Fisioterapia Neurológica - bloque 1"
+                        class="rounded-md w-full max-w-md mx-auto" />
+                </div>
+            </div>
 
-            <h3 class="text-2xl font-semibold text-blue-900 mt-6">¿Por qué es tan importante?</h3>
-            <p class="mt-4 text-lg leading-relaxed text-gray-700">
-                La fisioterapia neurológica es clave para mejorar la funcionalidad en pacientes con enfermedades como el Parkinson, la esclerosis múltiple, los ictus (ACV) y las lesiones medulares. Con un tratamiento adecuado, se pueden lograr grandes avances en la movilidad, reduciendo el dolor y evitando complicaciones adicionales. Además, la rehabilitación temprana es fundamental para obtener los mejores resultados.
-            </p>
+            <!-- Bloque 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-start gap-6" data-aos="fade-up" data-aos-offset="50">
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-2xl font-semibold text-blue-900 mt-4">¿Qué técnicas utilizamos?</h3>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        Adaptamos el tratamiento a cada caso clínico, combinando trabajo activo y asistencia para
+                        mejorar la movilidad y la función neuromuscular.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        <strong>Estimulación motora:</strong> ejercicios dirigidos a mejorar fuerza, coordinación y
+                        control del movimiento.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        <strong>Entrenamiento de equilibrio y marcha:</strong> para reducir el riesgo de caídas y
+                        facilitar la movilidad en casa o en la calle.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        <strong>Reeducación funcional:</strong> mejora de tareas cotidianas como incorporarse, vestirse
+                        o desplazarse con seguridad.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="images/services-fisioterapia/neuro-2.jpg" alt="Fisioterapia Neurológica - bloque 2"
+                        class="rounded-md w-full max-w-md mx-auto" />
+                </div>
+            </div>
 
-            <p class="mt-4 text-lg text-gray-700">
-               Contamos con profesionales especializados que acompañan a cada paciente en su proceso de recuperación, utilizando tecnologías avanzadas y un enfoque integral para lograr una mejora continua.
-            </p>
+            <!-- Bloque 3 -->
+            <div class="flex flex-col md:flex-row items-start gap-6" data-aos="fade-up" data-aos-offset="50">
+                <div class="md:w-1/2 md:pr-8">
+                    <h3 class="text-2xl font-semibold text-blue-900 mt-4">Atención cercana y a domicilio</h3>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        En FisioCivis entendemos que cada proceso neurológico es único. Por eso diseñamos sesiones a
+                        medida, valorando el entorno del paciente y su evolución personal.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-700">
+                        Nuestro objetivo es ayudarte a recuperar funcionalidad, mejorar tu calidad de vida y sentirte
+                        acompañado en todo el proceso, directamente desde la comodidad de tu hogar.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="images/services-fisioterapia/neuro-3.jpg" alt="Fisioterapia Neurológica - bloque 3"
+                        class="rounded-md w-full max-w-md mx-auto" />
+                </div>
+            </div>
+
         </section>
 
-        <section class="text-white bg-teal-100 py-12 mt-12 text-center">
+        <!-- Contacto -->
+        <section class="text-white bg-teal-100 py-12 mt-12 text-center" data-aos="fade-up" data-aos-offset="50">
             <h2 class="text-3xl text-blue-900 font-bold mb-4">¿Necesitas más información?</h2>
-            <p class="text-lg text-blue-900 mb-6">Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en contactarnos!</p>
-            <a href="contacto.html" class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
+            <p class="text-lg text-blue-900 mb-6">Si tienes alguna pregunta o necesitas más detalles sobre nuestros
+                servicios, ¡no dudes en contactarnos!</p>
+            <a href="contacto.html"
+                class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full">
                 Contáctanos
             </a>
         </section>
-
     </main>
-    
+
     <div data-include="footer.html"></div>
-    
+
+    <!-- Scripts -->
     <script src="js/include.js"></script>
-   
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: false,
+            mirror: true
+        });
+    </script>
 </body>
+
 </html>

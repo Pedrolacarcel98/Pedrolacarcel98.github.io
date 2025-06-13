@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fisioterapia Traumatológica</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <style>
         .custom-font {
             font-family: 'Poppins', sans-serif;
         }
     </style>
-</head>
-<body class="bg-white text-gray-900 custom-font pt-28">
 
+    <style>
+        /* Enlaces principales */
+        .link {
+            @apply text-teal-400 text-lg md:text-base font-medium hover:text-teal-400/80;
+        }
+
+        /* Enlaces del submenú */
+        .sublink {
+            @apply block w-full pl-8 pr-4 py-3 text-teal-400 text-base md:text-sm hover:bg-teal-50;
+        }
+
+        /* Borde guía (solo móvil) */
+        @media (max-width: 767px) {
+            #subMenu {
+                @apply border-l-4 border-teal-400/30 mt-2;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-900 custom-font pt-28">
     <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
         <section>
             <div data-include="header.html"></div>
-
         </section>
-
-        
     </header>
-        
+
     <main class="p-4">
-        <h2 class="text-4xl mt-10 font-bold text-center text-teal-400 mb-4">
+        <h2 class="text-5xl mt-10 font-bold text-center text-teal-400 mb-4" data-aos="fade-up" data-aos-offset="50">
             Fisioterapia Traumatológica
         </h2>
-        
-        <section class="max-w-4xl mx-auto mt-8 px-6">
-            <h2 class="text-3xl font-semibold text-blue-900">¿Qué es la Fisioterapia Traumatológica?</h2>
-            <p class="mt-4 text-lg leading-relaxed text-gray-700">
-                La fisioterapia traumatológica está orientada al tratamiento de lesiones del sistema musculoesquelético, como fracturas, esguinces, luxaciones, tendinitis o cirugías ortopédicas. Su principal objetivo es recuperar la movilidad, la fuerza y la funcionalidad de las áreas afectadas, aliviando el dolor y mejorando la calidad de vida del paciente.
-            </p>
 
-            <img src="images/services/fisio-trauma-detail.png" alt="Fisioterapia Traumatológica" class="mt-6 mb-4 rounded-lg w-full max-w-md mx-auto">
+        <section class="max-w-6xl mx-auto mt-8 px-6 space-y-16">
 
-            <h3 class="text-2xl font-semibold text-blue-900 mt-6">
-                ¿En qué consiste la Fisioterapia Traumatológica?
-            </h3>
-            <p class="mt-4 text-lg leading-relaxed text-gray-700">
-                A través de distintas técnicas manuales y ejercicios terapéuticos, la fisioterapia traumatológica busca recuperar la funcionalidad y acelerar los procesos de curación. Se adapta a cada etapa de la rehabilitación: desde la fase aguda (donde se prioriza el control del dolor y la inflamación) hasta la fase de fortalecimiento y retorno a la actividad habitual.
-            </p>
+            <!-- Bloque 1 -->
+            <div class="flex flex-col md:flex-row items-start gap-6" data-aos="fade-up" data-aos-offset="50">
+                <div class="md:w-1/2 md:pr-8">
+                    <h2 class="text-3xl font-semibold text-blue-900 mt-4">¿En qué consiste la fisioterapia
+                        traumatológica?</h2>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        Esta especialidad se centra en el tratamiento de lesiones musculares, óseas y articulares
+                        producidas por traumatismos, cirugías o sobrecargas. El objetivo es restaurar la movilidad,
+                        eliminar el dolor y facilitar una recuperación completa y funcional.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="images/services-fisioterapia/traum-1.jpg" alt="Fisioterapia Traumatológica - bloque 1"
+                        class="rounded-md w-full max-w-md mx-auto" />
+                </div>
+            </div>
 
-            <ul class="list-disc list-inside mt-4 text-gray-700">
-                <li><strong>Terapia manual:</strong> Masajes, movilizaciones articulares y manipulaciones para aliviar tensiones y mejorar la movilidad.</li>
-                <li><strong>Ejercicio terapéutico:</strong> Programas personalizados de fortalecimiento y estiramientos.</li>
-                <li><strong>Agentes físicos:</strong> Aplicación de calor, frío, electroterapia o ultrasonido, según la fase de la lesión.</li>
-            </ul>
+            <!-- Bloque 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-start gap-6" data-aos="fade-up" data-aos-offset="50">
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-2xl font-semibold text-blue-900 mt-4">¿Cómo trabajamos?</h3>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        Realizamos una evaluación personalizada y aplicamos tratamientos dirigidos a mejorar el estado
+                        del tejido lesionado, reducir el dolor y devolver la función.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        <strong>Terapia manual:</strong> movilizaciones, masajes y estiramientos para ganar movilidad y
+                        aliviar tensión.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        <strong>Ejercicio terapéutico:</strong> recuperación progresiva de fuerza, equilibrio y control
+                        motor.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        <strong>Reeducación funcional:</strong> ejercicios adaptados para volver a caminar, agacharse,
+                        cargar peso o cualquier necesidad diaria.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="images/services-fisioterapia/depor-2.jpg" alt="Fisioterapia Traumatológica - bloque 2"
+                        class="rounded-md w-full max-w-md mx-auto" />
+                </div>
+            </div>
 
-            <h3 class="text-2xl font-semibold text-blue-900 mt-6">Beneficios de un tratamiento adecuado</h3>
-            <p class="mt-4 text-lg leading-relaxed text-gray-700">
-                Un abordaje fisioterapéutico temprano y personalizado ayuda a reducir complicaciones, evita secuelas y favorece una recuperación más rápida y eficaz. Además, contribuye a prevenir futuras lesiones al corregir desequilibrios musculares y mejorar la coordinación del movimiento.
-            </p>
+            <!-- Bloque 3 -->
+            <div class="flex flex-col md:flex-row items-start gap-6" data-aos="fade-up" data-aos-offset="50">
+                <div class="md:w-1/2 md:pr-8">
+                    <h3 class="text-2xl font-semibold text-blue-900 mt-4">¿Cuándo se recomienda?</h3>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        Está indicada tras fracturas, esguinces, luxaciones, cirugías ortopédicas, prótesis o lesiones
+                        por caídas. También es eficaz en dolencias como tendinitis, lumbalgias o roturas musculares.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-700">
+                        En FisioCivis te acompañamos en casa durante todo el proceso de recuperación, con sesiones
+                        eficaces y un trato totalmente personalizado.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="images/services-fisioterapia/depor-3.jpg" alt="Fisioterapia Traumatológica - bloque 3"
+                        class="rounded-md w-full max-w-md mx-auto" />
+                </div>
+            </div>
 
-            <p class="mt-4 text-lg text-gray-700">
-                En nuestro equipo, contamos con fisioterapeutas especializados en el ámbito traumatológico que trabajan contigo de forma cercana y profesional, acompañándote paso a paso en tu proceso de recuperación.
-            </p>
         </section>
 
-        <section class="text-white bg-teal-100 py-12 mt-12 text-center">
+        <!-- Contacto -->
+        <section class="text-white bg-teal-100 py-12 mt-12 text-center" data-aos="fade-up" data-aos-offset="50">
             <h2 class="text-3xl text-blue-900 font-bold mb-4">¿Necesitas más información?</h2>
-            <p class="text-lg text-blue-900 mb-6">Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en contactarnos!</p>
-            <a href="contacto.html" class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
+            <p class="text-lg text-blue-900 mb-6">Si tienes alguna pregunta o necesitas más detalles sobre nuestros
+                servicios, ¡no dudes en contactarnos!</p>
+            <a href="contacto.html"
+                class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full">
                 Contáctanos
             </a>
         </section>
@@ -72,6 +129,18 @@
 
     <div data-include="footer.html"></div>
 
+    <!-- Scripts -->
     <script src="js/include.js"></script>
+    <script src="js/header.js" defer></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: false,
+            mirror: true
+        });
+    </script>
 </body>
+
 </html>
