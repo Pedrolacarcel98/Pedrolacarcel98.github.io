@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# 1) Excluir includes: si piden header.html o footer.html, déjalos pasar tal cual
+RewriteRule ^(header|footer)\.html$ - [L,NC]
+
+# 2) Mostrar extensiones “.html” como URLs sin extensión y con slash final
+#    Solo si no es un directorio y existe el .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# 3) Redirigir quienes escriban “.html” a la URL limpia (con /)
+#    Pero excluye los includes
+RewriteCond %{REQUEST_URI} !^/(header|footer)\.html$ [NC]
+RewriteRule ^([^.]+)\.html$ /$1/ [R=301,L]
