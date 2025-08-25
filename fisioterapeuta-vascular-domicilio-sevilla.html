@@ -8,11 +8,11 @@
     <meta name="description"
         content="Mejora la circulación y el bienestar vascular con fisioterapeuta en tu domicilio en Sevilla.">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     <style>
         .custom-font {
@@ -44,7 +44,7 @@
 <body class="bg-white text-gray-900 custom-font pt-28">
     <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
         <section>
-            <div data-include="header.html"></div>
+            <div data-include="/partials/header.html"></div>
         </section>
     </header>
 
@@ -66,8 +66,8 @@
                 </div>
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <picture>
-                        <source srcset="images/services-fisioterapia/vas-1.webp" type="image/webp">
-                        <img src="images/services-fisioterapia/vas-1.jpg" alt="Fisioterapia Vascular - bloque 1"
+                        <source srcset="/images/services-fisioterapia/vas-1.webp" type="image/webp">
+                        <img src="/images/services-fisioterapia/vas-1.jpg" alt="Fisioterapia Vascular - bloque 1"
                             class="rounded-md w-full max-w-md mx-auto" loading="lazy">
                     </picture>
                 </div>
@@ -96,8 +96,8 @@
                 </div>
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <picture>
-                        <source srcset="images/services-fisioterapia/vas-2.webp" type="image/webp">
-                        <img src="images/services-fisioterapia/vas-2.jpg" alt="Fisioterapia Vascular - bloque 2"
+                        <source srcset="/images/services-fisioterapia/vas-2.webp" type="image/webp">
+                        <img src="/images/services-fisioterapia/vas-2.jpg" alt="Fisioterapia Vascular - bloque 2"
                             class="rounded-md w-full max-w-md mx-auto" loading="lazy">
                     </picture>
                 </div>
@@ -119,8 +119,8 @@
                 </div>
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <picture>
-                        <source srcset="images/services-fisioterapia/vas-3.webp" type="image/webp">
-                        <img src="images/services-fisioterapia/vas-3.jpg" alt="Fisioterapia Vascular - bloque 3"
+                        <source srcset="/images/services-fisioterapia/vas-3.webp" type="image/webp">
+                        <img src="/images/services-fisioterapia/vas-3.jpg" alt="Fisioterapia Vascular - bloque 3"
                             class="rounded-md w-full max-w-md mx-auto" loading="lazy">
                     </picture>
                 </div>
@@ -129,9 +129,8 @@
         </section>
 
         <!-- Contacto -->
-        <!-- Contacto -->
         <section data-aos="fade-up"
-            class="relative bg-[url('images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
+            class="relative bg-[url('../images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
 
             <!-- Contenido -->
@@ -141,7 +140,7 @@
                     Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en
                     contactarnos!
                 </h3>
-                <a href="contacto.html"
+                <a href="/contacto/"
                     class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
                     Contáctanos
                 </a>
@@ -149,11 +148,11 @@
         </section>
     </main>
 
-    <div data-include="footer.html"></div>
+    <div data-include="/partials/footer.html"></div>
 
     <!-- Scripts -->
-    <script src="js/include.js"></script>
-    <script src="js/header.js" defer></script>
+    <script src="/js/include.js"></script>
+    <script src="/js/header.js" defer></script>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>

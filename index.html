@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fisioterapeuta a Domicilio en Sevilla - Fisiocivis</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/fuentes.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link href="/css/tailwind.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/fuentes.css">
+
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
 
   <!-- ANIMACIONES AOS-->
@@ -17,38 +19,67 @@
 
   <!-- FUENTES -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="/css/header.css">
 
+<head>
+  <!-- 1. Título principal: -->
+  <title>Fisiocivis – Fisioterapia a domicilio en Sevilla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 2. Canonical (unifica URL): -->
+  <link rel="canonical" href="https://fisiocivis.es/">
+
+  <!-- 3. Meta SEO básicos: -->
   <meta name="description"
-    content="Sesiones de fisioterapeuta profesional en tu domicilio en Sevilla. Tratamientos personalizados sin moverte de casa.">
+    content="Fisiocivis: sesiones de fisioterapia profesional a domicilio en Sevilla. Tratamientos personalizados sin moverte de casa.">
   <meta name="keywords"
-    content="Fisioterapia Sevilla, Fisioterapia a Domicilio, Rehabilitación, Masajes terapéuticos, Osteopatía Sevilla" />
-  <meta name="author" content="Fisiocivis" />
+    content="Fisioterapia Sevilla, Fisioterapia a Domicilio, Rehabilitación, Masajes terapéuticos, Osteopatía Sevilla">
+  <meta name="author" content="Fisiocivis">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Fisioterapia a Domicilio en Sevilla | Fisiocivis">
+  <!-- 4. Open Graph (refuerza nombre marca): -->
+  <meta property="og:site_name" content="Fisiocivis">
+  <meta property="og:title" content="Fisiocivis – Fisioterapia a domicilio en Sevilla">
   <meta property="og:description"
-    content="Fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio.">
-  <meta property="og:image" content="images/Fisiocivis.png">
-  <meta property="og:url" content="https://Fisiocivis.es">
+    content="Fisiocivis, fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio.">
+  <meta property="og:image" content="https://fisiocivis.es/images/Fisiocivis.jpg">
+  <meta property="og:url" content="https://fisiocivis.es/">
   <meta property="og:type" content="website">
 
-  <!-- Twitter Card -->
+  <!-- 5. Twitter Card: -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fisioterapia a Domicilio en Sevilla | Fisiocivis">
+  <meta name="twitter:site" content="@Fisiocivis">
+  <meta name="twitter:title" content="Fisiocivis – Fisioterapia a domicilio en Sevilla">
   <meta name="twitter:description"
-    content="Fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio.">
-  <meta name="twitter:image" content="images/icons/fisioterapia-twitter.png">
+    content="Fisiocivis, fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio.">
+  <meta name="twitter:image" content="https://fisiocivis.es/images/icons/fisioterapia-twitter.jpg">
 
-
-
+  <!-- 6. JSON-LD: WebSite y Organization + Physiotherapy -->
   <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Fisiocivis",
+        "url": "https://fisiocivis.es/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://fisiocivis.es/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "Fisiocivis",
+        "url": "https://fisiocivis.es/",
+        "logo": "https://fisiocivis.es/images/Fisiocivis.jpg"
+      },
+      {
         "@type": "Physiotherapy",
         "name": "Fisiocivis",
-        "image": "https://Fisiocivis.es/images/Fisiocivis.png",
-        "url": "https://Fisiocivis.es",
+        "image": "https://fisiocivis.es/images/Fisiocivis.jpg",
+        "url": "https://fisiocivis.es/",
         "telephone": "+34 623 436 145",
         "address": {
           "@type": "PostalAddress",
@@ -58,8 +89,11 @@
         "areaServed": "Sevilla",
         "description": "Fisioterapia a domicilio en Sevilla por fisioterapeutas colegiados. Tratamientos personalizados de rehabilitación, masajes terapéuticos y osteopatía."
       }
+    ]
+  }
   </script>
 </head>
+
 
 <body class="relative bg-white text-gray-900 custom-font pt-28">
 
@@ -67,7 +101,7 @@
 
   <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
     <section>
-      <div data-include="header.html"></div>
+            <div data-include="/partials/header.html"></div>
     </section>
   </header>
 
@@ -77,7 +111,7 @@
   </h1>
 
   <section data-aos="fade-up"
-    class="relative bg-[url('images/services-fisioterapia/fisio-index.jpg')] bg-cover bg-center bg-fixed text-teal-400 text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl">
+    class="relative bg-[url('../images/services-fisioterapia/fisio-index.jpg')] bg-cover bg-center bg-fixed text-teal-400 text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl">
 
     <div class="bg-white bg-opacity-50 backdrop-blur-sm p-6 rounded-xl">
       <h2 class="text-3xl font-bold">
@@ -89,7 +123,7 @@
         <strong>domicilio en Sevilla</strong>, tu fisio de confianza en casa, donde y cuando quieras
       </h2>
 
-      <a href="https://wa.me/+34623436145?text=Hola!%20Me%20gustaría%20pedir%20cita.%20Gracias!"
+      <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola!%20Me%20gustaría%20pedir%20cita.%20Gracias!"
         class="reserva-boton inline-block bg-blue-900 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-400 transition-transform transform hover:scale-110 duration-300 mt-4">
         Reserva tu cita ahora
       </a>
@@ -109,8 +143,8 @@
         <!-- Experiencia -->
         <div class="bg-white p-6 rounded-lg">
           <picture>
-            <source srcset="images/icons/fisioterapia-sevilla-tick.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-sevilla-tick.png" alt="Fisioterapeutas colegiados"
+            <source srcset="/images/icons/fisioterapia-sevilla-tick.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-sevilla-tick.webp" alt="Fisioterapeutas colegiados"
               class="w-16 h-16 mx-auto mb-3" loading="lazy">
           </picture>
           <h3 class="text-xl font-semibold text-teal-400">Experiencia</h3>
@@ -120,7 +154,7 @@
 
         <!-- Facilidad -->
         <div class="bg-white p-6 rounded-lg">
-          <img src="images/icons/fisioterapia-sevilla-hamaca.png" alt="Material incluido"
+          <img src="/images/icons/fisioterapia-sevilla-hamaca.webp" alt="Material incluido"
             class="w-16 h-16 mx-auto mb-3">
           <h3 class="text-xl font-semibold text-teal-400">Facilidad</h3>
           <p class="text-gray-600 mt-2">Aportamos todo el material necesario. Llevamos incluso camilla portátil.</p>
@@ -129,7 +163,7 @@
 
         <!-- Flexibilidad -->
         <div class="bg-white p-6 rounded-lg">
-          <img src="images/icons/fisioterapia-domicilio-reloj.png" alt="Flexibilidad horaria"
+          <img src="/images/icons/fisioterapia-domicilio-reloj.webp" alt="Flexibilidad horaria"
             class="w-16 h-16 mx-auto mb-3">
           <h3 class="text-xl font-semibold text-teal-400">Flexibilidad</h3>
           <p class="text-gray-600 mt-2">Nos adaptamos a tu agenda y horarios.</p>
@@ -153,7 +187,7 @@
           class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
           <picture>
             <source srcset="images/icons/fisioterapia-cerebro.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-cerebro.png" alt="Fisioterapia neurológica"
+            <img src="/images/icons/fisioterapia-cerebro.jpg" alt="Fisioterapia neurológica"
               class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
           <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Neurológica</h3>
@@ -163,7 +197,7 @@
           class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
           <picture>
             <source srcset="images/icons/fisioterapia-anciano.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica"
+            <img src="/images/icons/fisioterapia-anciano.jpg" alt="Fisioterapia Geriátrica"
               class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
           <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
@@ -173,7 +207,7 @@
           class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
           <picture>
             <source srcset="images/icons/fisioterapia-hueso.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica"
+            <img src="/images/icons/fisioterapia-hueso.jpg" alt="Fisioterapia Traumatológica"
               class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
           <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
@@ -183,7 +217,7 @@
           class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
           <picture>
             <source srcset="images/icons/fisioterapia-sevilla-cardio.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-sevilla-cardio.png" alt="Fisioterapia Vascular"
+            <img src="/images/icons/fisioterapia-sevilla-cardio.jpg" alt="Fisioterapia Vascular"
               class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
           <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Vascular</h3>
@@ -192,8 +226,8 @@
         <a href="fisioterapeuta-atm-domicilio-sevilla.html"
           class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
           <picture>
-            <source srcset="images/icons/fisioterapia-atm.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-atm.png" alt="Fisioterapia ATM" class="w-20 sm:w-16 mx-auto mb-3"
+            <source srcset="/images/icons/fisioterapia-atm.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-atm.jpg" alt="Fisioterapia ATM" class="w-20 sm:w-16 mx-auto mb-3"
               loading="lazy">
           </picture>
           <h3 class="text-lg font-semibold text-teal-400">Fisioterapia ATM</h3>
@@ -202,8 +236,8 @@
         <a href="fisioterapeuta-deportiva-domicilio-sevilla.html"
           class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
           <picture>
-            <source srcset="images/icons/fisioterapia-deportiva.webp" type="image/webp">
-            <img src="images/icons/fisioterapia-deportiva.png" alt="Fisioterapia Deportiva"
+            <source srcset="/images/icons/fisioterapia-deportiva.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-deportiva.jpg" alt="Fisioterapia Deportiva"
               class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
           <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Deportiva</h3>
@@ -237,7 +271,7 @@
 
     <!-- Contacto -->
     <section data-aos="fade-up"
-      class="relative bg-[url('images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
+      class="relative bg-[url('../images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
       <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
 
       <!-- Contenido -->
@@ -293,10 +327,10 @@
 
   </div>
 
-  <div data-include="footer.html"></div>
+    <div data-include="/partials/footer.html"></div>
 
-  <script src="js/include.js" defer></script>
-  <script src="js/header.js" defer></script>
+  <script src="/js/include.js" defer></script>
+  <script src="/js/header.js" defer></script>
   <script>
     AOS.init({
       duration: 600,

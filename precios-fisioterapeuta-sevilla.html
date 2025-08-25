@@ -10,17 +10,17 @@
         content="fisioterapia a domicilio Sevilla, precios fisioterapia Sevilla, bonos fisioterapia Sevilla, sesión fisioterapia en casa Sevilla">
 
     <title>Precios de Fisioterapeuta a Domicilio en Sevilla</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/header.css">
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     <!-- ANIMACIONES AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="js/include.js"></script>
+    <script src="/js/include.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -56,7 +56,7 @@
 
     <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
         <section>
-            <div data-include="header.html"></div>
+            <div data-include="/partials/header.html"></div>
 
         </section>
 
@@ -107,7 +107,7 @@
                             incluido</p>
                     </div>
                 </div>
-                <a href="https://wa.me/+34623436145?text=Hola,%20quiero%20agendar%20una%20primera%20sesión%20de%20fisioterapia%20a%20domicilio."
+                <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola,%20quiero%20agendar%20una%20primera%20sesión%20de%20fisioterapia%20a%20domicilio."
                     target="_blank"
                     class="bg-blue-900 text-white py-2 px-4 rounded-lg block text-center text-sm font-semibold mt-6 transition-all duration-300 hover:bg-teal-500">Reserva</a>
             </div>
@@ -137,7 +137,7 @@
                             incluido</p>
                     </div>
                 </div>
-                <a href="https://wa.me/+34623436145?text=Hola,%20quiero%20reservar%20una%20sesión%20individual%20de%20fisioterapia."
+                <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola,%20quiero%20reservar%20una%20sesión%20individual%20de%20fisioterapia."
                     target="_blank"
                     class="bg-blue-900 text-white py-2 px-4 rounded-lg block text-center text-sm font-semibold mt-6 transition-all duration-300 hover:bg-teal-500">Reserva</a>
             </div>
@@ -168,7 +168,7 @@
                             incluido</p>
                     </div>
                 </div>
-                <a href="https://wa.me/+34623436145?text=Hola,%20estoy%20interesado/a%20en%20contratar%20el%20bono%20de%205%20sesiones%20de%20fisioterapia."
+                <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola,%20estoy%20interesado/a%20en%20contratar%20el%20bono%20de%205%20sesiones%20de%20fisioterapia."
                     target="_blank"
                     class="bg-blue-900 text-white py-2 px-4 rounded-lg block text-center text-sm font-semibold mt-6 transition-all duration-300 hover:bg-teal-500">Reserva</a>
             </div>
@@ -199,7 +199,7 @@
                             incluido</p>
                     </div>
                 </div>
-                <a href="https://wa.me/+34623436145?text=Hola,%20me%20gustaría%20reservar%20el%20bono%20de%2010%20sesiones%20de%20fisioterapia."
+                <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola,%20me%20gustaría%20reservar%20el%20bono%20de%2010%20sesiones%20de%20fisioterapia."
                     target="_blank"
                     class="bg-blue-900 text-white py-2 px-4 rounded-lg block text-center text-sm font-semibold mt-6 transition-all duration-300 hover:bg-teal-500">Reserva</a>
             </div>
@@ -229,7 +229,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="https://wa.me/+34623436145?text=Hola,%20quiero%20agendar%20una%20sesión%20de%20fisioterapia%20online."
+                <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola,%20quiero%20agendar%20una%20sesión%20de%20fisioterapia%20online."
                     target="_blank"
                     class="bg-blue-900 text-white py-2 px-4 rounded-lg block text-center text-sm font-semibold mt-6 transition-all duration-300 hover:bg-teal-500">Reserva</a>
             </div>
@@ -280,7 +280,7 @@
                 </div>
 
                 <!-- Botón abajo -->
-                <a href="https://wa.me/+34623436145?text=Hola,%20necesito%20una%20sesión%20de%20fisioterapia%20de%20urgencia%20(en%20fin%20de%20semana%20o%20festivo)."
+                <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola,%20necesito%20una%20sesión%20de%20fisioterapia%20de%20urgencia%20(en%20fin%20de%20semana%20o%20festivo)."
                     target="_blank"
                     class="bg-blue-900 text-white py-2 px-4 rounded-lg block text-center text-sm font-semibold transition-all duration-300 hover:bg-teal-500 mt-6">
                     Reserva
@@ -292,72 +292,73 @@
 
         </div>
 
+        <!-- Servicios -->
         <section id="servicios" class="mt-12" data-aos="fade-up">
             <h2 class="text-5xl font-semibold text-blue-900">Nuestros Servicios de Fisioterapia</h2>
             <h3 class="mt-2 text-gray-600">
                 Ofrecemos tratamientos personalizados en <strong>fisioterapia a domicilio en Sevilla</strong> para
-                aliviar el
+                aliviar elS
                 dolor y mejorar tu movilidad.
-                <a href="fisioterapeuta-servicios-sevilla.html" class="text-blue-900 font-semibold hover:underline">Ver
+                <a href="/fisioterapeuta-servicios-sevilla/" class="text-blue-900 font-semibold hover:underline">Ver
                     servicios</a>.
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
                 <!-- Tarjetas de servicios -->
-                <a href="fisioterapeuta-neurologica-domicilio-sevilla.html"
+                <a href="/fisioterapeuta-neurologica-domicilio-sevilla/"
                     class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
                     <picture>
-                        <source srcset="images/icons/fisioterapia-cerebro.webp" type="image/webp">
-                        <img src="images/icons/fisioterapia-cerebro.png" alt="Fisioterapia neurológica"
+                        <source srcset="/images/icons/fisioterapia-cerebro.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-cerebro.png" alt="Fisioterapia neurológica"
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Neurológica</h3>
                 </a>
 
-                <a href="fisioterapeuta-geriatrica-domicilio-sevilla.html"
+                <a href="/fisioterapeuta-geriatrica-domicilio-sevilla/"
                     class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
                     <picture>
-                        <source srcset="images/icons/fisioterapia-anciano.webp" type="image/webp">
-                        <img src="images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica"
+                        <source srcset="/images/icons/fisioterapia-anciano.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica"
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
                 </a>
 
-                <a href="fisioterapeuta-traumatologica-domicilio-sevilla.html"
+                <a href="/fisioterapeuta-traumatologica-domicilio-sevilla/"
                     class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
                     <picture>
-                        <source srcset="images/icons/fisioterapia-hueso.webp" type="image/webp">
-                        <img src="images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica"
+                        <source srcset="/images/icons/fisioterapia-hueso.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica"
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
                 </a>
 
-                <a href="fisioterapeuta-vascular-domicilio-sevilla.html"
+                <a href="/fisioterapeuta-vascular-domicilio-sevilla/"
                     class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
                     <picture>
-                        <source srcset="images/icons/fisioterapia-sevilla-cardio.webp" type="image/webp">
-                        <img src="images/icons/fisioterapia-sevilla-cardio.png" alt="Fisioterapia Vascular"
+                        <source srcset="/images/icons/fisioterapia-sevilla-cardio.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-sevilla-cardio.png" alt="Fisioterapia Vascular"
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Vascular</h3>
                 </a>
 
-                <a href="fisioterapeuta-atm-domicilio-sevilla.html"
+                <a href="/fisioterapeuta-atm-domicilio-sevilla/"
                     class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
                     <picture>
-                        <source srcset="images/icons/fisioterapia-atm.webp" type="image/webp">
-                        <img src="images/icons/fisioterapia-atm.png" alt="Fisioterapia ATM"
+                        <source srcset="/images/icons/fisioterapia-atm.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-atm.png" alt="Fisioterapia ATM"
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia ATM</h3>
                 </a>
 
-                <a href="fisioterapeuta-deportiva-domicilio-sevilla.html"
+                <a href="/fisioterapeuta-deportiva-domicilio-sevilla/"
                     class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
                     <picture>
-                        <source srcset="images/icons/fisioterapia-deportiva.webp" type="image/webp">
-                        <img src="images/icons/fisioterapia-deportiva.png" alt="Fisioterapia Deportiva"
+                        <source srcset="/images/icons/fisioterapia-deportiva.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-deportiva.png" alt="Fisioterapia Deportiva"
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Deportiva</h3>
@@ -369,7 +370,7 @@
 
         <!-- Contacto -->
         <section data-aos="fade-up"
-            class="relative bg-[url('images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
+            class="relative bg-[url('../images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
 
             <!-- Contenido -->
@@ -379,17 +380,17 @@
                     Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en
                     contactarnos!
                 </h3>
-                <a href="contacto.html"
+                <a href="/contacto/"
                     class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
                     Contáctanos
                 </a>
             </div>
         </section>
     </div>
-    <div data-include="footer.html"></div>
+    <div data-include="/partials/footer.html"></div>
 
-    <script src="js/include.js"></script>
-    <script src="js/header.js" defer></script>
+    <script src="/js/include.js"></script>
+    <script src="/js/header.js" defer></script>
 
     <script>
         function toggleDropdown(id) {
