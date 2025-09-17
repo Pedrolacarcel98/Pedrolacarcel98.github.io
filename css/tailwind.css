@@ -1596,3 +1596,20 @@ video {
     align-items: flex-start;
   }
 }
+
+/* === Colores bronce personalizados === */
+.bg-amber-100 { background-color:#FEF3C7; }   /* fondo claro */
+.bg-amber-700 { background-color:#B45309; }   /* fondo bronce oscuro */
+.hover\:bg-amber-600:hover { background-color:#D97706; } /* hover */
+.border-amber-600 { border-color:#D97706; }
+.text-amber-900 { color:#78350F; }
+
+/* Gradiente estilo Tailwind */
+.from-amber-700 {
+  --tw-gradient-from:#B45309 var(--tw-gradient-from-position);
+  --tw-gradient-to:rgb(180 83 9 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-amber-500 {
+  --tw-gradient-to:#F59E0B var(--tw-gradient-to-position);
+}
