@@ -1596,26 +1596,30 @@ video {
     align-items: flex-start;
   }
 }
-
-/* === Colores bronce personalizados === */
+/* === Paleta ÁMBAR (bronce) compatible con tu build === */
+/* Colores base */
 .bg-amber-100 { background-color:#FEF3C7; }   /* fondo claro */
-.bg-amber-700 { background-color:#B45309; }   /* fondo bronce oscuro */
-.hover\:bg-amber-600:hover { background-color:#D97706; } /* hover */
-.border-amber-600 { border-color:#D97706; }
-.text-amber-900 { color:#78350F; }
+.bg-amber-700 { background-color:#B45309; }   /* botón / bloques oscuros */
+.border-amber-600 { border-color:#D97706; }   /* borde bronce */
+.text-amber-900 { color:#78350F; }            /* texto principal */
+.text-amber-700 { color:#B45309; }            /* texto acento (símbolo €) */
+.hover\:bg-amber-600:hover { background-color:#D97706; } /* hover botón */
 
-/* Gradiente estilo Tailwind */
-.from-amber-700 {
-  --tw-gradient-from:#B45309 var(--tw-gradient-from-position);
-  --tw-gradient-to:rgb(180 83 9 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-amber-500 {
-  --tw-gradient-to:#F59E0B var(--tw-gradient-to-position);
-}
-
-/* Asegurar gradiente ámbar funcione */
+/* === Gradiente estilo Tailwind === */
+/* Dirección del gradiente (a la derecha)
+   Si ya tienes esta clase en tu tailwind.css, no pasa nada por redefinirla. */
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+/* Color inicial del gradiente */
+.from-amber-700 {
+  --tw-gradient-from: #B45309 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(180 83 9 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+/* Color final del gradiente */
+.to-amber-500 {
+  --tw-gradient-to: #F59E0B var(--tw-gradient-to-position);
+}
