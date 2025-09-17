@@ -1613,3 +1613,9 @@ video {
 .to-amber-500 {
   --tw-gradient-to:#F59E0B var(--tw-gradient-to-position);
 }
+
+/* Asegurar gradiente ámbar funcione */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
